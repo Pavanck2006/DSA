@@ -43,3 +43,17 @@ public:
         return A;
     }
 };
+/*this is for both row and column are sorted order
+int i = 0, j = m - 1;
+
+while (i < n && j >= 0) {
+    if (mat[i][j] == x) {
+        cout << "\nFound at " << i << ", " << j;
+        return 1;
+    }
+    if (mat[i][j] > x)
+        j--;
+    else
+        i++;
+}
+*/
