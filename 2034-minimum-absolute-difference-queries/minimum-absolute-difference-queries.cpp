@@ -8,7 +8,7 @@ public:
         
         for (int i = 1; i <= n; i++) {
             prefix[i] = prefix[i - 1];
-            prefix[i][nums[i - 1]]++;
+            prefix[i][nums[i - 1]]++;//count = prefix[r+1][v] - prefix[l][v]
         }
 
         vector<int> ans;
