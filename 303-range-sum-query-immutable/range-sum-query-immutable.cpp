@@ -1,9 +1,6 @@
 class NumArray {
       vector<int>prefix;
-public:
-   
-      
-    
+public:    
         NumArray(vector<int>&nums)
         {
             prefix.push_back(0);
