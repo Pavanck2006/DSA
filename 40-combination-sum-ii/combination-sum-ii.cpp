@@ -11,12 +11,12 @@ void subsequence(int index,vector<int>&ans,vector<vector<int>>&result,vector<int
          if(candidates[i] > target)
           break;
 
-       if(i>index && candidates[i]==candidates[i-1])
+       if(i>index && candidates[i]==candidates[i-1])//skipping dupplicate combinations
        continue;
       
         ans.push_back(candidates[i]);
         subsequence(i+1,ans,result,candidates,target-candidates[i]);
-        ans.pop_back();
+        ans.pop_back();//back track
     }
 }
 
