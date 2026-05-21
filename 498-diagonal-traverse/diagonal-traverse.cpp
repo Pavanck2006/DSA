@@ -13,44 +13,44 @@ public:
         int row = 0, col = 0;
         bool up = true;
 
-        while(row < m && col < n)
+        while(row<m && col<n)
         {
             if(up)
             {
-                while(row > 0 && col < n - 1)
+                while(row>0 && col <n-1)
                 {
                     arr.push_back(mat[row][col]);
                     row--;
                     col++;
                 }
-
                 arr.push_back(mat[row][col]);
-
-                if(col == n - 1)
+                if(col==n-1)
+                {   
                     row++;
-                else
+                }
+                else{
                     col++;
+                }
             }
             else
             {
-                while(row < m - 1 && col > 0)
+                while(row<m-1 && col >0)
                 {
                     arr.push_back(mat[row][col]);
                     row++;
                     col--;
-                }
-
+                } 
                 arr.push_back(mat[row][col]);
-
-                if(row == m - 1)
+                 if(row==m-1)
+                {   
                     col++;
-                else
+                }
+                else{
                     row++;
+                }
             }
-
-            up = !up;
+            up= !up;
         }
-
         return arr;
     }
 };
