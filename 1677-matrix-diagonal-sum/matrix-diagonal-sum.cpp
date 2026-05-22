@@ -8,7 +8,7 @@ public:
 
         while(col < m && row < n)
         {
-            if(m % 2 == 0)//for even number 
+            if(m % 2 == 0)//for even number row and column
             {
                 while(col < m && row < n)
                 {
@@ -16,20 +16,16 @@ public:
                     row++;
                     col++;
                 }
-
                 row = 0;
                 col = n - 1;
-
                 while(col >= 0 && row < n)
                 {
-                    
-
                     sum += mat[row][col];
                     row++;
                     col--;
                 }
             }
-            else
+            else//for odd number column and row
             {
                 while(col < m && row < n)
                 {
