@@ -8,7 +8,7 @@ public:
 
         while(col < m && row < n)
         {
-            if(m % 2 == 0)
+            if(m % 2 == 0)//for even number 
             {
                 while(col < m && row < n)
                 {
