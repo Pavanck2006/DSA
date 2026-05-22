@@ -10,7 +10,7 @@ public:
         {
             if(m % 2 == 0)//for even number row and column
             {
-                while(col < m && row < n)
+                while(col < m && row < n)//from first row to column
                 {
                     sum += mat[row][col];
                     row++;
@@ -18,7 +18,7 @@ public:
                 }
                 row = 0;
                 col = n - 1;
-                while(col >= 0 && row < n)
+                while(col >= 0 && row < n) //from bottum to first row
                 {
                     sum += mat[row][col];
                     row++;
@@ -27,7 +27,7 @@ public:
             }
             else//for odd number column and row
             {
-                while(col < m && row < n)
+                while(col < m && row < n)//from first row to column
                 {
                     sum += mat[row][col];
                     row++;
@@ -37,7 +37,7 @@ public:
                 row = 0;
                 col = n - 1;
 
-                while(col >= 0 && row < n)
+                while(col >= 0 && row < n)//from bottum to first row
                 {
                     if(row == col)
                     {
