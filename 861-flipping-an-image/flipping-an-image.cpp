@@ -45,6 +45,7 @@ public:
                ans[i][j]=1;
             }
         }
+        //return image;
         return ans;
 
 
