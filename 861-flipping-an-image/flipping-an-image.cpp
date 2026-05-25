@@ -32,15 +32,20 @@ public:
         }
         return ans;*/
         int n=image.size();
+         vector<vector<int>>ans(n,vector<int>(n));
         for(int i=0;i<n;i++)
         {
             reverse(image[i].begin(),image[i].end());
             for(int j=0;j<n;j++)
             {
-               image[i][j] ^= 1;// it convert o to 1 and 1 to 0
+              // image[i][j] ^= 1;// it convert o to 1 and 1 to 0,this direct way
+              if(image[i][j]==1)
+              ans[i][j]=0;
+              else
+               ans[i][j]=1;
             }
         }
-        return image;
+        return ans;
 
 
     }
