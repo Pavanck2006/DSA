@@ -14,10 +14,10 @@ public:
              countl++;
         }
         if(isupper(word[0]) && countu==1)
-        return true;
+        return true; // First letter uppercase, rest lowercase
         if(countu==word.size()|| countl==word.size())
         return true;
-        return false;
+        return false;//fffffffffffffffF occurs only like this string
         
     }
 };
