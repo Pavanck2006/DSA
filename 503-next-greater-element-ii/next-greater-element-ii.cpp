@@ -19,7 +19,7 @@ public:
                 nge[i] = st.top();
             }
 
-            st.push(nums[i%n]);
+            st.push(nums[i%n]);// circular quee
             
         }
 
