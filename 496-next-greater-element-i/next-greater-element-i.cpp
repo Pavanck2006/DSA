@@ -13,7 +13,7 @@ public:
            int ans=-1;;
            for(int k=j+1;k<nums2.size();k++)
            {
-            if(nums1[i]<nums2[k]&& j<nums2.size())
+            if(nums1[i]<nums2[k])
             {
             ans=nums2[k];
             break;
