@@ -10,15 +10,16 @@ public:
        }
        for(auto it:mp)
        {
-        if(it.second>maxF)
+        if(it.second>nums.size()/2)
+       return it.first;
+       
+       /* if(it.second>maxF)
         {
             maxF = it.second;
             ans = it.first;
-        }
+        }*/
        }
-       //if(it.second>nums.size()/2)
-       //return it.first;
-      // return -1;
-      return ans;
+       return -1;
+      //return ans;
     }
 };
