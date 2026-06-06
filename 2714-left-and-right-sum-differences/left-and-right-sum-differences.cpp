@@ -20,7 +20,7 @@ public:
 
         for(int i = 0; i < n; i++)
         {
-            ans[i] = abs(leftSum[i] - rightSum[i]);
+            ans[i] = abs(leftSum[i] - rightSum[i]);//the absolute value using abs(). it convert - to +
         }
 
         return ans;
