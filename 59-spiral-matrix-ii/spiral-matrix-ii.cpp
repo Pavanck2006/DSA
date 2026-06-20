@@ -21,7 +21,7 @@ public:
         break;
         mat[erow][i]=count++;
     }
-    for(int j=erow-1;j>srow;j--)
+    for(int j=erow-1;j>=srow+1;j--)
     {
         if(scol==ecol)
         break;
