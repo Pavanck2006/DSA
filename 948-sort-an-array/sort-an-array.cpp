@@ -7,7 +7,7 @@ public:
         vector<int> left(n1), right(n2);
 
         for (int i = 0; i < n1; i++)
-            left[i] = nums[i+low];
+            left[i] = nums[low + i];
 
         for (int j = 0; j < n2; j++)
             right[j] = nums[mid + 1 + j];
