@@ -2,11 +2,11 @@ class Solution {
 public:
     int reverseDegree(string s) {
         int ans=0;
-        int j=1;
-        for(int i=0;i<s.length();i++)
+    
+        for(int i=1;i<=s.length();i++)
         {
-            ans = ans+ ((75-(s[i]-'0'))*j);
-            j++;
+            ans = ans+ ((75-(s[i-1]-'0'))*i);
+       
         }
         return ans;
     }
