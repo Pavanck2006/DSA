@@ -4,7 +4,8 @@ public:
         if(n < 1000)
             return 0;
 
-        long long ans = 0;
+        long long ans = 0;//ans += n-p+1;
+                            // p*=1000;
 
         if(n >= 1000)
             ans += n - 1000 + 1;
