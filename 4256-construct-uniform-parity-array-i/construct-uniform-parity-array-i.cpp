@@ -14,18 +14,8 @@
 
         if(sum % 2 == 0)
         {
-            bool allEven = true;
-
-            for(int i = 0; i < nums1.size(); i++)
-            {
-                if(nums1[i] % 2 != 0)
-                {
-                    allEven = false;
-                    break;
-                }
-            }
-
-            if(allEven)
+           
+           
                 return true;
         }
 
