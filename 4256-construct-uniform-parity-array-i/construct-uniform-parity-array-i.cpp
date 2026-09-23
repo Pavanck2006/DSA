@@ -15,7 +15,6 @@
         if(sum % 2 == 0)
         {
            
-           
                 return true;
         }
 
@@ -36,22 +35,18 @@
 
         count = 0;
 
-        for(int i = 0; i < nums1.size(); i++)
+        for(int i=0;i<nums1.size();i++)
         {
-            for(int j = 0; j < nums1.size(); j++)
+            for(int j=0;j<nums1.size();j++)
             {
-                if(i != j && nums1[i] % 2 != nums1[j] % 2)
+                if(i !=j && (nums1[i]%2 != nums1[j]%2))
                 {
-                    nums2[i] = nums1[i] - nums1[j];
-
-                    if(nums2[i] % 2 != 0)
-                    {
-                        count++;
-                    }
-
-                    break;
+                nums2[i]=nums1[i]-nums1[j];
+                break;
                 }
+               
             }
+             count++;
         }
 
         if(count == nums1.size())
