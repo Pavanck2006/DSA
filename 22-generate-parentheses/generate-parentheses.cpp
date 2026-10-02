@@ -12,10 +12,15 @@ public:
             return;
         }
        
-        generate( cur +'(',n,ans);
-       
-        generate( cur  + ')',n,ans);
+    /*cur += '(';
+    generate(cur, n, ans);
+    cur.pop_back();
 
+    cur += ')';
+    generate(cur, n, ans);
+    cur.pop_back();*/
+         generate(cur + '(', n, ans);
+        generate(cur + ')', n, ans);
     }
     bool isvalid(string cur)
     {
